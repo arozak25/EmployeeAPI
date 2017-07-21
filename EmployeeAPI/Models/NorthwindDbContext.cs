@@ -12,7 +12,7 @@ namespace EmployeeAPI.Models
 
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("datasource =.; initial catalog =northwind; integrated security = true");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Office;Trusted_Connection=True;MultipleActiveResultSets=true");
         }
     }
 }
